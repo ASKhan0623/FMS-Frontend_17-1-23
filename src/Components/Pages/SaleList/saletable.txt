@@ -1,0 +1,389 @@
+// import React from 'react';
+// import { useState, useEffect } from 'react';
+// import { Table } from 'antd';
+
+// const columns = [
+//   {
+//     title: 'Date',
+//     width: 35,
+//     dataIndex: 'date',
+//     key: 'date',
+//     fixed: 'left',
+//     sorter: true,
+//   },
+//   {
+//     title: 'Reference #',
+//     width: 40,
+//     dataIndex: 'reference',
+//     key: 'reference',
+//     fixed: 'left',
+//     sorter: true,
+//   },
+//   {
+//     title: 'Customer',
+//     dataIndex: 'customer',
+//     key: '1',
+//     width: 30,
+//   },
+//   {
+//     title: 'Biller',
+//     dataIndex: 'biller',
+//     key: '2',
+//     width: 30,
+//   },
+//   {
+//     title: 'Sale Status',
+//     dataIndex: 'sstatus',
+//     key: '3',
+//     width: 30,
+//   },
+//   {
+//     title: 'Payment Status',
+//     dataIndex: 'pstatus',
+//     key: '4',
+//     width: 30,
+//   },
+//   {
+//     title: 'Grand Total',
+//     dataIndex: 'gtotal',
+//     key: '5',
+//     width: 30,
+//   },
+//   {
+//     title: 'Paid',
+//     dataIndex: 'paid',
+//     key: '6',
+//     width: 30,
+//   },
+//   {
+//     title: 'Due',
+//     dataIndex: 'due',
+//     key: '7',
+//     width: 25,
+//   },
+//   {
+//     title: 'Action',
+//     key: 'operation',
+//     fixed: 'right',
+//     width: 30,
+//     render: () => <a>action</a>,
+//   },
+// ];
+// const data = [
+//   {
+//     key: '1',
+//     date: '12-11-2023',
+//     reference: '112233',
+//     customer: 'John Brown',
+//     biller: 'Sir Usama',
+//     sstatus: 'Partial',
+//     pstatus: 'Pending',
+//     gtotal: 6875.00,
+//     paid: 'Pending',
+//     due: 'Pending',
+//   },
+//   {
+//     key: '2',
+//     date: '12-11-2023',
+//     reference: '112233',
+//     customer: 'John Brown',
+//     biller: 'Sir Usama',
+//     sstatus: 'Partial',
+//     pstatus: 'Pending',
+//     gtotal: 6875.00,
+//     paid: 'Pending',
+//     due: 'Pending',
+//   },
+// ];
+
+// const SaleTable = () => (
+
+//   const [users, setUsers] = useState([]);
+
+//   useEffect(()=>{
+//       fetchAllUsers();
+//   },[]);
+
+//   const fetchAllUsers = () => {
+//       http.get('/users').then(res=>{
+//           setUsers(res.data);
+//       })
+//   }
+
+//   const deleteUser = (id) => {
+//       http.delete('/users/'+id).then(res=>{
+//           fetchAllUsers();
+//       })
+//   }
+
+//   <Table
+//     columns={columns}
+//     dataSource={users.map((user,index)=>(
+//       <tr key={user.id}>
+//           <td>{++index}</td>
+//           <td>{user.name}</td>
+//           <td>{user.email}</td>
+//           <td>
+//               <Link className="btn btn-info" to={{ pathname: "/edit/" + user.id }}>Edit</Link>&nbsp;
+//               <Link className="btn btn-primary" to={{ pathname: "/view/" + user.id }}>View</Link>&nbsp;
+//               <button type="button" className="btn btn-danger"
+//                   onClick={()=>{deleteUser(user.id)}}
+//                   >Delete</button>
+//           </td>
+//       </tr>
+//     ))}
+//     scroll={{
+//       x: 800,
+//     }}
+//   />
+// );
+
+// export default SaleTable;
+
+// import { useState,useEffect } from "react";
+// import http from "../../../http";
+// import { Link } from "react-router-dom";
+// export default function Home() {
+//     const [users, setUsers] = useState([]);
+
+//     useEffect(()=>{
+//         fetchAllUsers();
+//     },[]);
+
+//     const fetchAllUsers = () => {
+//         http.get('/users').then(res=>{
+//             setUsers(res.data);
+//         })
+//     }
+
+
+//     const deleteUser = (id) => {
+//         http.delete('/users/'+id).then(res=>{
+//             fetchAllUsers();
+//         })
+//     }
+
+
+
+//     return (
+//         <div>
+//             <h2>Users listing ...</h2>
+//             <table className="table">
+//                 <thead>
+//                     <tr>
+//                         <th>Sno.</th>
+//                         <th>Name</th>
+//                         <th>Email</th>
+//                         <th>Action</th>
+//                     </tr>
+//                 </thead>
+//                 <tbody>
+//                     {users.map((user,index)=>(
+//                         <tr key={user.id}>
+//                             <td>{++index}</td>
+//                             <td>{user.name}</td>
+//                             <td>{user.email}</td>
+//                             <td>
+//                                 <Link className="btn btn-info" to={{ pathname: "/sale/discountcard/saleedit/" + user.id }}>Edit</Link>&nbsp;
+//                                 <Link className="btn btn-primary" to={{ pathname: "/sale/discountcard/saleview/" + user.id }}>View</Link>&nbsp;
+//                                 <button type="button" className="btn btn-danger"
+//                                     onClick={()=>{deleteUser(user.id)}}
+//                                     >Delete</button>
+//                             </td>
+//                         </tr>
+//                     ))}
+//                 </tbody>
+//             </table>
+//         </div>
+
+//     )
+// }
+
+
+// {saleadds.map(function fn(saleadd)
+  //   {
+  //        return(
+  //        <tbody>
+  //            <tr>
+  //            <th scope="row">{student.id} </th>
+  //            <td>{saleadd.customer}</td>
+  //            <td>{saleadd.company}</td>
+  //            <td>{saleadd.biller}</td>
+  //            <td>{saleadd.otax}</td>
+  //            <td>{saleadd.odiscount}</td>
+  //            <td>{saleadd.discount}</td>
+  //            <td>{saleadd.sstatus}</td>
+  //            <td>{saleadd.pstatus}</td>
+  //            <td>{saleadd.slnote}</td>
+  //            <td>{saleadd.stnote}</td>
+  //            <td>
+  //                <button type="button" class="btn btn-warning"  onClick={() => editStudent(student)} >Edit</button>  
+  //                <button type="button" class="btn btn-danger" onClick={() => DeleteStudent(student.id)}>Delete</button>
+  //            </td>
+  //            </tr>
+  //        </tbody>
+  //        );})}
+
+  // const data = [
+//   {
+//     key: '1',
+//     name: 'John Brown',
+//     age: 32,
+//     address: 'New York No. 1 Lake Park',
+//   },
+//   {
+//   {
+//     key: '2',
+//     name: 'Disabled User',
+//     age: 99,
+//     address: 'Sydney No. 1 Lake Park',
+//   },
+// ];
+
+// rowSelection object indicates the need for row selection
+
+
+// import React, { useState, useEffect } from 'react';
+// import { Table } from 'antd';
+// import { Menu, Dropdown, Button } from 'antd';
+// import { DownOutlined } from '@ant-design/icons';
+// import axios from 'axios';
+
+// const ActionMenu = ({ id, onDelete }) => {
+//   const handleMenuClick = async (e) => {
+//     console.log('Clicked on menu item:', e.key);
+//     if (e.key === '7') {
+//       // Check if the selected action is 'Delete' (key = '7')
+//       try {
+//         await (async () => {
+//           await onDelete(id); // Call the onDelete function with the row ID
+//         })();
+//       } catch (error) {
+//         console.error('Error deleting item:', error);
+//       }
+//     }
+//   };
+
+// const handleMenuClick = (record, action) => {
+//   if (action === 'delete') {
+//       // Implement delete logic
+//   } else if (action === 'edit') {
+//       // Implement edit logic
+//   }
+// };
+
+// const menu = (record) => (
+//   <Menu onClick={({ key }) => handleMenuClick(record, key)}>
+//       <Menu.Item key="edit" icon={<EditOutlined />}>
+//           Edit
+//       </Menu.Item>
+//       <Menu.Item key="delete" icon={<DeleteOutlined />}>
+//           Delete
+//       </Menu.Item>
+//   </Menu>
+// );
+
+// const columns = [
+//   {
+//     title: 'Date',
+//     dataIndex: 'date',
+//   },
+//   {
+//     title: 'Reference',
+//     dataIndex: 'age',
+//   },
+//   {
+//     title: 'Biller',
+//     dataIndex: 'biller',
+//   },
+//   {
+//     title: 'Customer',
+//     dataIndex: 'company',
+//   },
+//   {
+//     title: 'Sale Status',
+//     dataIndex: 'sstatus',
+//   },
+//   {
+//     title: 'Payment Status',
+//     dataIndex: 'pstatus',
+//   },
+//   {
+//     title: 'Grand Total',
+//     dataIndex: 'age',
+//   },
+//   {
+//     title: 'Paid',
+//     dataIndex: 'age',
+//   },
+//   {
+//     title: 'Due',
+//     dataIndex: 'age',
+//   },
+//   {
+//     title: 'Action',
+//     dataIndex: 'action', // Assuming 'id' is the unique identifier of the row
+//     render: (text, record) => (
+//       <Dropdown overlay={() => menu(record)}>
+//           <EllipsisOutlined />
+//       </Dropdown>
+//   ), // Pass the ID and onDelete function
+//   },
+// ];
+
+// const rowSelection = {
+//   onChange: (selectedRowKeys, selectedRows) => {
+//     console.log(`selectedRowKeys: ${selectedRowKeys}`, 'selectedRows: ', selectedRows);
+//   },
+//   getCheckboxProps: (record) => ({
+//     disabled: record.name === 'Disabled User',
+//     // Column configuration not to be checked
+//     name: record.name,
+//   }),
+// };
+
+// const SaleTable = () => {
+//   const [selectionType, setSelectionType] = useState('checkbox');
+//   const [saleadds, setSaleadds] = useState([]);
+
+//   useEffect(() => {
+//     (async () => await Load())();
+//     }, []);
+  
+//     async function  Load()
+//     {
+//        const result = await axios.get(
+//            "http://127.0.0.1:8000/api/saleadd");
+//            setSaleadds(result.data);
+//            console.log(result.data);
+//     }
+
+//     async function DeleteSale(id) {
+//       try {
+//         await axios.delete(`http://127.0.0.1:8000/api/saleadd/${id}`);
+//         alert('Data has been deleted Successfully');
+//         Load();
+//       } catch (error) {
+//         console.error('Error deleting item:', error);
+//       }
+//     }
+
+//   const pagination = {
+//     pageSize: 5, // Number of rows per page
+//   };
+
+//   return (
+//     <div>
+//       <Table
+//         rowSelection={{
+//           type: selectionType,
+//         }}
+//         columns={columns}
+//         dataSource={saleadds}
+//         pagination={pagination} // Add pagination configuration
+//       />
+//     </div>
+//   );
+// };
+
+// export default SaleTable;

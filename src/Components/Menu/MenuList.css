@@ -1,0 +1,9 @@
+.menu-bar{
+    height: 88.5vh;
+    margin-top: 1rem;
+    display:flex;
+    flex-direction: column;
+    gap: 5px;
+    font-size: 1rem;
+    position: relative;
+}

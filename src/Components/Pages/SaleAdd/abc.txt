@@ -1,0 +1,25 @@
+form.getFieldValue(['fields', name, 'qty']) * form.getFieldValue(['fields', name, 'price']) ? form.getFieldValue(['fields', name, 'qty']) * form.getFieldValue(['fields', name, 'price']) : 0}
+<p>{form.getFieldValue(['users', name, 'uprice']) * form.getFieldValue(['users', name, 'quantity'])}</p>
+<p>{form.getFieldValue(['users', name, 'uprice']) * form.getFieldValue(['users', name, 'quantity']) ? form.getFieldValue(['users', name, 'uprice']) * form.getFieldValue(['users', name, 'quantity'])}</p>
+
+
+  // const [selectionType, setSelectionType] = useState('checkbox');
+
+  // const rowSelection = {
+  //   selectedRowKeys: [], // Array to manage selected row keys
+  //   onChange: (selectedRowKeys, selectedRows) => {
+  //     console.log(`selectedRowKeys: ${selectedRowKeys}`, 'selectedRows: ', selectedRows);
+  //   },
+  //   getCheckboxProps: (record) => ({
+  //     disabled: record.name === 'Disabled User',
+  //     // Column configuration not to be checked
+  //     name: record.name,
+  //   }),
+  // };
+
+  <Table
+        // rowSelection={rowSelection}
+        columns={columns}
+        dataSource={saleadds}
+        pagination={pagination}
+      />

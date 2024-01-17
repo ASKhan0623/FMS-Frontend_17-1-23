@@ -1,0 +1,557 @@
+/* Dashboard.jsx File Css */
+
+.DashBody {
+    background-color: #553d67; 
+    margin: 25px;
+    width: 95%;
+    height: 95%;
+    border-radius: 20px;
+}
+
+.DashBody h1{
+    display: Flex;
+    align-items: center; 
+    justify-content: flex-start;
+    color: #659dbd;
+    margin-top: 20px;
+    margin-left: 20px;
+    font-size: 18px;
+}
+
+/* ProductCat.jsx File Css */
+
+.ProductCatBody {
+    background-color: #553d67; 
+    margin: 25px;
+    width: 95%;
+    height: 95%;
+    border-radius: 20px;
+}
+
+.ProductCatBody h1 {
+    display: Flex;
+    align-items: center; 
+    justify-content: flex-start;
+    color: #659dbd;
+    margin-top: 20px;
+    margin-left: 20px;
+    font-size: 18px;
+}
+
+/* ProductList.jsx File Css */
+
+.ProductListBody {
+    background-color: #553d67; 
+    margin: 25px;
+    width: 95%;
+    height: 95%;
+    border-radius: 20px;
+}
+
+.ProductListBody h1 {
+    display: Flex;
+    align-items: center; 
+    justify-content: flex-start;
+    color: #659dbd;
+    margin-top: 20px;
+    margin-left: 20px;
+    font-size: 18px;
+}
+
+/* ProductServ.jsx File Css */
+
+.ProductServBody {
+    background-color: #553d67; 
+    margin: 25px;
+    width: 95%;
+    height: 95%;
+    border-radius: 20px;
+}
+
+.ProductServBody h1 {
+    display: Flex;
+    align-items: center; 
+    justify-content: flex-start;
+    color: #659dbd;
+    margin-top: 20px;
+    margin-left: 20px;
+    font-size: 18px;
+}
+
+/* PurchaseList.jsx File Css */
+
+.PurchaseListBody {
+    background-color: #553d67; 
+    margin: 25px;
+    width: 95%;
+    height: 95%;
+    border-radius: 20px;
+}
+
+.PurchaseListBody h1 {
+    display: Flex;
+    align-items: center; 
+    justify-content: flex-start;
+    color: #659dbd;
+    margin-top: 20px;
+    margin-left: 20px;
+    font-size: 18px;
+}
+
+/* PurchaseAdd.jsx File Css */
+
+.PurchaseAddBody {
+    background-color: #553d67; 
+    margin: 25px;
+    width: 95%;
+    height: 95%;
+    border-radius: 20px;
+}
+
+.PurchaseAddBody h1 {
+    display: Flex;
+    align-items: center; 
+    justify-content: flex-start;
+    color: #659dbd;
+    margin-top: 20px;
+    margin-left: 20px;
+    font-size: 18px;
+}
+
+/* AddSale.jsx File Css */
+
+.AddSaleBoard {
+    background-color: #553d67;
+    margin: 25px;
+    width: 95%;
+    height: 95%;
+    border-radius: 20px;
+    border: 2px transparent yellow;
+}
+
+.AddSaleBoard h1 {
+    display: Flex;
+    align-items: center; 
+    justify-content: flex-start;
+    color: #659dbd;
+    margin-top: 20px;
+    margin-left: 20px;
+    font-size: 18px;
+}
+
+.SelectionArea {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin: 20px;
+}
+
+.SubmitBtn {
+    background-color: green;
+}
+
+/* SaleList.jsx File Css */
+
+.SaleListBody{
+    background-color: #553d67; 
+    margin: 25px;
+    width: 95%;
+    height: 95%;
+    border-radius: 20px; 
+}
+
+.SaleListBody h1{
+    display: Flex;
+    align-items: center; 
+    justify-content: flex-start;
+    color: #659dbd;
+    margin-top: 20px;
+    margin-left: 20px;
+    font-size: 18px;
+}
+
+.CustomButtonColor {
+    background-color: blueviolet; /* Replace 'blue' with your desired color */
+  }
+  
+
+/* SaleDiscountCard.jsx File Css */
+
+.SaleDiscountBody {
+    background-color: #553d67; 
+    margin: 25px;
+    width: 95%;
+    height: 95%;
+    border-radius: 20px;
+}
+
+.SaleDiscountBody h1 {
+    display: Flex;
+    align-items: center; 
+    justify-content: flex-start;
+    color: #659dbd;
+    margin-top: 20px;
+    margin-left: 20px;
+    font-size: 18px;
+}
+
+/* ExpenseCat.jsx File Css */
+
+.ExpenseCatBody {
+    background-color: #553d67; 
+    margin: 25px;
+    width: 95%;
+    height: 95%;
+    border-radius: 20px;
+}
+
+.ExpenseCatBody h1 {
+    display: Flex;
+    align-items: center; 
+    justify-content: flex-start;
+    color: #659dbd;
+    margin-top: 20px;
+    margin-left: 20px;
+    font-size: 18px;
+}
+
+/* ExpenseList.jsx File Css */
+
+.ExpenseListBody {
+    background-color: #553d67; 
+    margin: 25px;
+    width: 95%;
+    height: 95%;
+    border-radius: 20px;
+}
+
+.ExpenseListBody h1 {
+    display: Flex;
+    align-items: center; 
+    justify-content: flex-start;
+    color: #659dbd;
+    margin-top: 20px;
+    margin-left: 20px;
+    font-size: 18px;
+}
+
+/* ExpenseAdd.jsx File Css */
+
+.ExpenseAddBody {
+    background-color: #553d67; 
+    margin: 25px;
+    width: 95%;
+    height: 95%;
+    border-radius: 20px;
+}
+
+.ExpenseAddBody h1 {
+    display: Flex;
+    align-items: center; 
+    justify-content: flex-start;
+    color: #659dbd;
+    margin-top: 20px;
+    margin-left: 20px;
+    font-size: 18px;
+}
+
+/* Transfer-TransferList.jsx File Css */
+
+.TransferListBody {
+    background-color: #553d67; 
+    margin: 25px;
+    width: 95%;
+    height: 95%;
+    border-radius: 20px;
+}
+
+.TransferListBody h1 {
+    display: Flex;
+    align-items: center; 
+    justify-content: flex-start;
+    color: #659dbd;
+    margin-top: 20px;
+    margin-left: 20px;
+    font-size: 18px;
+}
+
+/* Transfer-TransferAdd.jsx File Css */
+
+.TransferAddBody {
+    background-color: #553d67; 
+    margin: 25px;
+    width: 95%;
+    height: 95%;
+    border-radius: 20px;
+}
+
+.TransferAddBody h1 {
+    display: Flex;
+    align-items: center; 
+    justify-content: flex-start;
+    color: #659dbd;
+    margin-top: 20px;
+    margin-left: 20px;
+    font-size: 18px;
+}
+
+/* Return-ReturnSales.jsx File Css */
+
+.SaleReturnBody {
+    background-color: #553d67; 
+    margin: 25px;
+    width: 95%;
+    height: 95%;
+    border-radius: 20px;
+}
+
+.SaleReturnBody h1 {
+    display: Flex;
+    align-items: center; 
+    justify-content: flex-start;
+    color: #659dbd;
+    margin-top: 20px;
+    margin-left: 20px;
+    font-size: 18px;
+}
+
+/* Return-ReturnPurchase.jsx File Css */
+
+.PurchaseReturnBody {
+    background-color: #553d67; 
+    margin: 25px;
+    width: 95%;
+    height: 95%;
+    border-radius: 20px;
+}
+
+.PurchaseReturnBody h1 {
+    display: Flex;
+    align-items: center; 
+    justify-content: flex-start;
+    color: #659dbd;
+    margin-top: 20px;
+    margin-left: 20px;
+    font-size: 18px;
+}
+
+/* Account-AccountList.jsx File Css */
+
+.AccountListBody {
+    background-color: #553d67; 
+    margin: 25px;
+    width: 95%;
+    height: 95%;
+    border-radius: 20px;
+}
+
+.AccountListBody h1 {
+    display: Flex;
+    align-items: center; 
+    justify-content: flex-start;
+    color: #659dbd;
+    margin-top: 20px;
+    margin-left: 20px;
+    font-size: 18px;
+}
+
+/* Account-AccountAdd.jsx File Css */
+
+.AccountAddBody {
+    background-color: #553d67; 
+    margin: 25px;
+    width: 95%;
+    height: 95%;
+    border-radius: 20px;
+}
+
+.AccountAddBody h1 {
+    display: Flex;
+    align-items: center; 
+    justify-content: flex-start;
+    color: #659dbd;
+    margin-top: 20px;
+    margin-left: 20px;
+    font-size: 18px;
+}
+
+/* Account-AccBalanceSheet.jsx File Css */
+
+.AccBalanceSheetBody {
+    background-color: #553d67; 
+    margin: 25px;
+    width: 95%;
+    height: 95%;
+    border-radius: 20px;
+}
+
+.AccBalanceSheetBody h1 {
+    display: Flex;
+    align-items: center; 
+    justify-content: flex-start;
+    color: #659dbd;
+    margin-top: 20px;
+    margin-left: 20px;
+    font-size: 18px;
+}
+
+/* Account-AccStatement.jsx File Css */
+
+.AccStatementBody {
+    background-color: #553d67; 
+    margin: 25px;
+    width: 95%;
+    height: 95%;
+    border-radius: 20px;
+}
+
+.AccStatementBody h1 {
+    display: Flex;
+    align-items: center; 
+    justify-content: flex-start;
+    color: #659dbd;
+    margin-top: 20px;
+    margin-left: 20px;
+    font-size: 18px;
+}
+
+/* Setting-AccPermission.jsx File Css */
+
+.AccPermissionBody {
+    background-color: #553d67; 
+    margin: 25px;
+    width: 95%;
+    height: 95%;
+    border-radius: 20px;
+}
+
+.AccPermissionBody h1 {
+    display: Flex;
+    align-items: center; 
+    justify-content: flex-start;
+    color: #659dbd;
+    margin-top: 20px;
+    margin-left: 20px;
+    font-size: 18px;
+}
+
+/* Setting-Company.jsx File Css */
+
+.CompanyBody {
+    background-color: #553d67; 
+    margin: 25px;
+    width: 95%;
+    height: 95%;
+    border-radius: 20px;
+}
+
+.CompanyBody h1 {
+    display: Flex;
+    align-items: center; 
+    justify-content: flex-start;
+    color: #659dbd;
+    margin-top: 20px;
+    margin-left: 20px;
+    font-size: 18px;
+}
+
+/* Setting-CustomerList.jsx File Css */
+
+.CustomerListBody {
+    background-color: #553d67; 
+    margin: 25px;
+    width: 95%;
+    height: 95%;
+    border-radius: 20px;
+}
+
+.CustomerListBody h1 {
+    display: Flex;
+    align-items: center; 
+    justify-content: flex-start;
+    color: #659dbd;
+    margin-top: 20px;
+    margin-left: 20px;
+    font-size: 18px;
+}
+
+/* Setting-CustomerAdd.jsx File Css */
+
+.CustomerAddBody {
+    background-color: #553d67; 
+    margin: 25px;
+    width: 95%;
+    height: 95%;
+    border-radius: 20px;
+}
+
+.CustomerAddBody h1 {
+    display: Flex;
+    align-items: center; 
+    justify-content: flex-start;
+    color: #659dbd;
+    margin-top: 20px;
+    margin-left: 20px;
+    font-size: 18px;
+}
+
+/* Setting-VendorList.jsx File Css */
+
+.VendorListBody {
+    background-color: #553d67; 
+    margin: 25px;
+    width: 95%;
+    height: 95%;
+    border-radius: 20px;
+}
+
+.VendorListBody h1 {
+    display: Flex;
+    align-items: center; 
+    justify-content: flex-start;
+    color: #659dbd;
+    margin-top: 20px;
+    margin-left: 20px;
+    font-size: 18px;
+}
+
+/* Setting-VendorAdd.jsx File Css */
+
+.VendorAddBody {
+    background-color: #553d67; 
+    margin: 25px;
+    width: 95%;
+    height: 95%;
+    border-radius: 20px;
+}
+
+.VendorAddBody h1 {
+    display: Flex;
+    align-items: center; 
+    justify-content: flex-start;
+    color: #659dbd;
+    margin-top: 20px;
+    margin-left: 20px;
+    font-size: 18px;
+}
+
+/* Setting-UserProfile.jsx File Css */
+
+.UserProfileBody {
+    background-color: #553d67; 
+    margin: 25px;
+    width: 95%;
+    height: 95%;
+    border-radius: 20px;
+}
+
+.UserProfileBody h1 {
+    display: Flex;
+    align-items: center; 
+    justify-content: flex-start;
+    color: #659dbd;
+    margin-top: 20px;
+    margin-left: 20px;
+    font-size: 18px;
+}
